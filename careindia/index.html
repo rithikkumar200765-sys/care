@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CAREINDIA | Your Health, Our Priority</title>
+  <meta name="description" content="CAREINDIA provides trusted, compassionate and accessible healthcare with experienced doctors and modern facilities.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+
+    <a href="#home" class="logo">
+      <span class="logo-icon">
+        <i class="fa-solid fa-plus"></i>
+      </span>
+      <span>CARE<span>INDIA</span></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#doctors" class="nav-link">Doctors</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+      <button class="mobile-book-btn" onclick="openAppointment()">
+        Book Appointment
+      </button>
+    </nav>
+
+    <button class="nav-appointment" onclick="openAppointment()">
+      Book Appointment
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-bg-circle circle-one"></div>
+  <div class="hero-bg-circle circle-two"></div>
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <div class="trust-badge">
+        <i class="fa-solid fa-shield-heart"></i>
+        Trusted Healthcare • Compassionate Care
+      </div>
+
+      <h1>
+        Your Health,
+        <span>Our Priority.</span>
+      </h1>
+
+      <p>
+        Providing trusted, compassionate, and accessible healthcare
+        with experienced doctors, modern facilities, and personalized
+        care for you and your family.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="openAppointment()">
+          Book Appointment
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <a href="#about" class="btn btn-outline">
+          Learn More
+        </a>
+      </div>
+
+      <div class="hero-trust">
+
+        <div>
+          <strong>10K+</strong>
+          <span>Happy Patients</span>
+        </div>
+
+        <div>
+          <strong>25+</strong>
+          <span>Expert Doctors</span>
+        </div>
+
+        <div>
+          <strong>24/7</strong>
+          <span>Support</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-image-area">
+
+      <div class="hero-image-wrapper">
+
+        <img
+          src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85"
+          alt="Professional healthcare doctor">
+
+        <div class="floating-card expert-card">
+          <div class="float-icon">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+
+          <div>
+            <strong>Expert Care</strong>
+            <small>Qualified Specialists</small>
+          </div>
+        </div>
+
+        <div class="floating-card support-card">
+          <div class="float-icon cyan">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+
+          <div>
+            <strong>24/7 Support</strong>
+            <small>We're here for you</small>
+          </div>
+        </div>
+
+        <div class="verified-card">
+          <i class="fa-solid fa-circle-check"></i>
+          Verified Healthcare
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+  <div class="container stats-grid">
+
+    <div class="stat-card">
+      <i class="fa-solid fa-users"></i>
+      <div>
+        <h3><span class="counter" data-target="10000">0</span>+</h3>
+        <p>Happy Patients</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <i class="fa-solid fa-user-doctor"></i>
+      <div>
+        <h3><span class="counter" data-target="25">0</span>+</h3>
+        <p>Expert Doctors</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <div>
+        <h3><span class="counter" data-target="15">0</span>+</h3>
+        <p>Healthcare Services</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <i class="fa-solid fa-clock"></i>
+      <div>
+        <h3>24/7</h3>
+        <p>Patient Support</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">OUR SERVICES</span>
+
+      <h2>Healthcare Services <span>You Can Trust</span></h2>
+
+      <p>
+        Comprehensive medical care designed around your health,
+        comfort, and wellbeing.
+      </p>
+    </div>
+
+    <div class="service-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input
+        type="text"
+        id="serviceSearch"
+        placeholder="Search healthcare services..."
+      >
+    </div>
+
+    <div class="services-grid" id="servicesGrid">
+
+      <article class="service-card" data-service="general consultation">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+
+        <h3>General Consultation</h3>
+
+        <p>
+          Professional medical consultations and personalized
+          treatment plans for everyday health needs.
+        </p>
+
+        <button onclick="openService('General Consultation')">
+          Learn More <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </article>
+
+
+      <article class="service-card" data-service="cardiology">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+
+        <h3>Cardiology</h3>
+
+        <p>
+          Specialized heart care, diagnosis, monitoring,
+          and treatment from experienced professionals.
+        </p>
+
+        <button onclick="openService('Cardiology')">
+          Learn More <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </article>
+
+
+      <article class="service-card" data-service="dental care">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+
+        <h3>Dental Care</h3>
+
+        <p>
+          Complete dental care focused on healthy teeth,
+          gums, and confident smiles.
+        </p>
+
+        <button onclick="openService('Dental Care')">
+          Learn More <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </article>
+
+
+      <article class="service-card" data-service="mental wellness">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <h3>Mental Wellness</h3>
+
+        <p>
+          Compassionate mental health support for stress,
+          anxiety, and emotional wellbeing.
+        </p>
+
+        <button onclick="openService('Mental Wellness')">
+          Learn More <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about-section" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+        alt="Healthcare professionals">
+
+      <div class="about-experience">
+        <strong>15+</strong>
+        <span>Years of<br>Healthcare Excellence</span>
+      </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+      <span class="section-label">ABOUT CAREINDIA</span>
+
+      <h2>
+        Caring for You,
+        <span>Every Step of the Way</span>
+      </h2>
+
+      <p>
+        CAREINDIA is committed to delivering accessible, reliable,
+        and compassionate healthcare. Our team combines medical
+        expertise, modern facilities, and a patient-first approach
+        to create a comfortable healthcare experience.
+      </p>
+
+      <div class="check-list">
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          Qualified Healthcare Professionals
+        </div>
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          Modern Medical Facilities
+        </div>
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          Patient-Centered Care
+        </div>
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          Affordable Healthcare
+        </div>
+
+      </div>
+
+      <button class="btn btn-primary" onclick="openAppointment()">
+        Learn More About CAREINDIA
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="section why-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">WHY CAREINDIA</span>
+
+      <h2>Why Choose <span>CAREINDIA?</span></h2>
+
+      <p>
+        Your wellbeing comes first. We combine experienced
+        professionals, modern technology, and compassionate care.
+      </p>
+    </div>
+
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-number">01</div>
+        <div class="why-icon">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <h3>Experienced Doctors</h3>
+        <p>
+          Qualified healthcare professionals dedicated to
+          expert and personalized care.
+        </p>
+      </div>
+
+
+      <div class="why-card">
+        <div class="why-number">02</div>
+        <div class="why-icon">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <h3>24/7 Support</h3>
+        <p>
+          Get healthcare assistance and support whenever
+          you need it.
+        </p>
+      </div>
+
+
+      <div class="why-card">
+        <div class="why-number">03</div>
+        <div class="why-icon">
+          <i class="fa-solid fa-hospital"></i>
+        </div>
+        <h3>Modern Facilities</h3>
+        <p>
+          Advanced equipment and comfortable facilities
+          designed for quality care.
+        </p>
+      </div>
+
+
+      <div class="why-card">
+        <div class="why-number">04</div>
+        <div class="why-icon">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h3>Affordable Care</h3>
+        <p>
+          High-quality healthcare services designed to
+          remain accessible and affordable.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= DOCTORS ================= -->
+
+<section class="section doctors-section" id="doctors">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">OUR TEAM</span>
+
+      <h2>Meet Our <span>Doctors</span></h2>
+
+      <p>
+        Experienced specialists committed to providing
+        exceptional care.
+      </p>
+    </div>
+
+
+    <div class="doctor-filters">
+
+      <button class="filter-btn active" data-filter="all">
+        All
+      </button>
+
+      <button class="filter-btn" data-filter="cardiologist">
+        Cardiologists
+      </button>
+
+      <button class="filter-btn" data-filter="general">
+        General Physicians
+      </button>
+
+      <button class="filter-btn" data-filter="dentist">
+        Dentists
+      </button>
+
+      <button class="filter-btn" data-filter="mental">
+        Mental Wellness
+      </button>
+
+    </div>
+
+
+    <div class="doctors-grid">
+
+      <article class="doctor-card" data-category="cardiologist">
+
+        <div class="doctor-image">
+          <img
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=85"
+            alt="Dr. Ananya Sharma">
+
+          <span class="available">
+            <i class="fa-solid fa-circle"></i>
+            Available Today
+          </span>
+        </div>
+
+        <div class="doctor-info">
+          <h3>Dr. Ananya Sharma</h3>
+          <p class="specialization">Cardiologist</p>
+
+          <div class="doctor-meta">
+            <span>12+ Years Experience</span>
+            <span>★★★★★ 4.9</span>
+          </div>
+
+          <button class="doctor-btn" onclick="openAppointment('Dr. Ananya Sharma')">
+            Book Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </article>
+
+
+      <article class="doctor-card" data-category="general">
+
+        <div class="doctor-image">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=85"
+            alt="Dr. Rahul Mehta">
+
+          <span class="available">
+            <i class="fa-solid fa-circle"></i>
+            Available Today
+          </span>
+        </div>
+
+        <div class="doctor-info">
+          <h3>Dr. Rahul Mehta</h3>
+          <p class="specialization">General Physician</p>
+
+          <div class="doctor-meta">
+            <span>10+ Years Experience</span>
+            <span>★★★★★ 4.8</span>
+          </div>
+
+          <button class="doctor-btn" onclick="openAppointment('Dr. Rahul Mehta')">
+            Book Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </article>
+
+
+      <article class="doctor-card" data-category="dentist">
+
+        <div class="doctor-image">
+          <img
+            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=85"
+            alt="Dr. Priya Nair">
+
+          <span class="available">
+            <i class="fa-solid fa-circle"></i>
+            Available Today
+          </span>
+        </div>
+
+        <div class="doctor-info">
+          <h3>Dr. Priya Nair</h3>
+          <p class="specialization">Dentist</p>
+
+          <div class="doctor-meta">
+            <span>8+ Years Experience</span>
+            <span>★★★★★ 4.9</span>
+          </div>
+
+          <button class="doctor-btn" onclick="openAppointment('Dr. Priya Nair')">
+            Book Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </article>
+
+
+      <article class="doctor-card" data-category="mental">
+
+        <div class="doctor-image">
+          <img
+            src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=600&q=85"
+            alt="Dr. Arjun Kumar">
+
+          <span class="available">
+            <i class="fa-solid fa-circle"></i>
+            Available Today
+          </span>
+        </div>
+
+        <div class="doctor-info">
+          <h3>Dr. Arjun Kumar</h3>
+          <p class="specialization">Mental Wellness Specialist</p>
+
+          <div class="doctor-meta">
+            <span>9+ Years Experience</span>
+            <span>★★★★★ 4.8</span>
+          </div>
+
+          <button class="doctor-btn" onclick="openAppointment('Dr. Arjun Kumar')">
+            Book Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="section testimonials-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">PATIENT STORIES</span>
+
+      <h2>Trusted by Our <span>Patients</span></h2>
+
+      <p>
+        Real experiences from people who trust CAREINDIA
+        with their healthcare.
+      </p>
+    </div>
+
+
+    <div class="testimonial-wrapper">
+
+      <button class="slider-btn" id="prevTestimonial">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <div class="testimonial-card" id="testimonialCard">
+
+        <div class="quote-icon">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+
+        <div class="stars">★★★★★</div>
+
+        <p id="testimonialText">
+          "CAREINDIA made my appointment experience simple
+          and comfortable. The doctors were professional
+          and caring."
+        </p>
+
+        <div class="patient">
+          <div class="patient-avatar" id="patientAvatar">AK</div>
+
+          <div>
+            <strong id="patientName">Anjali Kumar</strong>
+            <small id="patientService">General Consultation</small>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="slider-btn" id="nextTestimonial">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section faq-section">
+
+  <div class="container faq-grid">
+
+    <div class="faq-intro">
+
+      <span class="section-label">FAQ</span>
+
+      <h2>
+        Frequently Asked
+        <span>Questions</span>
+      </h2>
+
+      <p>
+        Find answers to common questions about our
+        healthcare services and appointments.
+      </p>
+
+      <button class="btn btn-primary" onclick="openAppointment()">
+        Ask for Help
+      </button>
+
+    </div>
+
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          How do I book an appointment?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Click any Book Appointment button on the website,
+            choose your doctor or service, select your preferred
+            date and time, and submit the appointment request.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Can I choose a specific doctor?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. You can browse our doctors and select a
+            specific specialist when booking an appointment.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Do you provide emergency support?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            CAREINDIA provides 24/7 patient support. For
+            life-threatening emergencies, contact your local
+            emergency medical service immediately.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          What services does CAREINDIA offer?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            We currently showcase General Consultation,
+            Cardiology, Dental Care and Mental Wellness services.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          Can I cancel or reschedule an appointment?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. Contact the CAREINDIA support team to
+            request a cancellation or rescheduling.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button class="faq-question">
+          How will I receive appointment confirmation?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            After submitting your request, our team will
+            contact you using the information provided to
+            confirm your appointment.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EMERGENCY ================= -->
+
+<section class="emergency-section">
+
+  <div class="container emergency-content">
+
+    <div class="emergency-icon">
+      <i class="fa-solid fa-phone-volume"></i>
+    </div>
+
+    <div>
+      <span>24/7 PATIENT SUPPORT</span>
+      <h2>Need Urgent Healthcare Support?</h2>
+      <p>Our support team is available 24/7 to assist you.</p>
+    </div>
+
+    <a href="tel:+910000000000" class="emergency-btn">
+      Call Now
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+  <div class="container cta-content">
+
+    <div>
+      <span class="section-label">TAKE THE NEXT STEP</span>
+
+      <h2>Ready to Take Care of Your Health?</h2>
+
+      <p>
+        Schedule an appointment with our experienced
+        healthcare professionals and take the next step
+        toward a healthier you.
+      </p>
+    </div>
+
+    <div class="cta-buttons">
+
+      <button class="btn btn-white" onclick="openAppointment()">
+        Book Your Appointment
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <a href="#contact" class="btn btn-transparent">
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact-section" id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">CONTACT US</span>
+
+      <h2>Get in Touch <span>With Us</span></h2>
+
+      <p>
+        Have a question or need an appointment?
+        We're here to help.
+      </p>
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <div>
+            <span>Phone</span>
+            <strong>+91 XXX XXX XXXX</strong>
+          </div>
+        </div>
+
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+
+          <div>
+            <span>Email</span>
+            <strong>care@careindia.com</strong>
+          </div>
+        </div>
+
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div>
+            <span>Location</span>
+            <strong>Thanjavur, Tamil Nadu, India</strong>
+          </div>
+        </div>
+
+
+        <div class="map-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <strong>CAREINDIA Healthcare Center</strong>
+          <span>Thanjavur, Tamil Nadu</span>
+        </div>
+
+      </div>
+
+
+      <div class="contact-form-card">
+
+        <h3>Request an Appointment</h3>
+
+        <p>
+          Fill out the form and our team will contact you.
+        </p>
+
+        <form id="contactForm">
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="contactName" required
+                     placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" id="contactEmail" required
+                     placeholder="you@example.com">
+            </div>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label>Phone *</label>
+              <input type="tel" id="contactPhone" required
+                     placeholder="+91">
+            </div>
+
+            <div class="form-group">
+              <label>Service *</label>
+
+              <select id="contactService" required>
+                <option value="">Select service</option>
+                <option>General Consultation</option>
+                <option>Cardiology</option>
+                <option>Dental Care</option>
+                <option>Mental Wellness</option>
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Message</label>
+
+            <textarea id="contactMessage"
+                      rows="4"
+                      placeholder="Tell us how we can help..."></textarea>
+
+          </div>
+
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Submit Appointment Request
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <div class="form-success" id="contactSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            Your request has been submitted successfully!
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-icon">
+          <i class="fa-solid fa-plus"></i>
+        </span>
+        <span>CARE<span>INDIA</span></span>
+      </a>
+
+      <p>
+        Compassionate healthcare. Trusted professionals.
+        Better wellbeing.
+      </p>
+
+      <div class="social-icons">
+
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h4>Quick Links</h4>
+
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h4>Services</h4>
+
+      <a href="#services">General Consultation</a>
+      <a href="#services">Cardiology</a>
+      <a href="#services">Dental Care</a>
+      <a href="#services">Mental Wellness</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h4>Contact</h4>
+
+      <a href="tel:+910000000000">+91 XXX XXX XXXX</a>
+      <a href="mailto:care@careindia.com">care@careindia.com</a>
+      <span>Thanjavur, Tamil Nadu</span>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <div class="container footer-bottom-content">
+
+      <p>
+        © 2026 CAREINDIA. All rights reserved.
+      </p>
+
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= SERVICE MODAL ================= -->
+
+<div class="modal" id="serviceModal">
+
+  <div class="modal-overlay" onclick="closeService()"></div>
+
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeService()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-icon">
+      <i class="fa-solid fa-heart-pulse"></i>
+    </div>
+
+    <span class="section-label">HEALTHCARE SERVICE</span>
+
+    <h2 id="serviceModalTitle">General Consultation</h2>
+
+    <p id="serviceModalText">
+      Our healthcare professionals provide personalized
+      consultations designed around your individual health needs.
+    </p>
+
+    <div class="modal-benefits">
+
+      <div>
+        <i class="fa-solid fa-circle-check"></i>
+        Professional consultation
+      </div>
+
+      <div>
+        <i class="fa-solid fa-circle-check"></i>
+        Personalized care
+      </div>
+
+      <div>
+        <i class="fa-solid fa-circle-check"></i>
+        Experienced professionals
+      </div>
+
+    </div>
+
+    <button class="btn btn-primary" onclick="closeService(); openAppointment()">
+      Book Appointment
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ================= APPOINTMENT MODAL ================= -->
+
+<div class="modal" id="appointmentModal">
+
+  <div class="modal-overlay" onclick="closeAppointment()"></div>
+
+  <div class="modal-box appointment-box">
+
+    <button class="modal-close" onclick="closeAppointment()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-icon">
+      <i class="fa-solid fa-calendar-check"></i>
+    </div>
+
+    <span class="section-label">BOOK YOUR VISIT</span>
+
+    <h2>Book an Appointment</h2>
+
+    <p>
+      Choose your preferred doctor, service, date and time.
+    </p>
+
+
+    <form id="appointmentForm">
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" required placeholder="you@example.com">
+        </div>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" required placeholder="+91">
+        </div>
+
+        <div class="form-group">
+          <label>Doctor</label>
+
+          <select id="doctorSelect">
+
+            <option value="">Select Doctor</option>
+
+            <option>Dr. Ananya Sharma</option>
+            <option>Dr. Rahul Mehta</option>
+            <option>Dr. Priya Nair</option>
+            <option>Dr. Arjun Kumar</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group">
+
+          <label>Service *</label>
+
+          <select required>
+
+            <option value="">Select Service</option>
+            <option>General Consultation</option>
+            <option>Cardiology</option>
+            <option>Dental Care</option>
+            <option>Mental Wellness</option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>Preferred Date *</label>
+
+          <input type="date" id="appointmentDate" required>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Preferred Time *</label>
+
+        <select required>
+
+          <option value="">Select Time</option>
+          <option>09:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>02:00 PM</option>
+          <option>03:00 PM</option>
+          <option>04:00 PM</option>
+          <option>05:00 PM</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>Message</label>
+
+        <textarea rows="3"
+                  placeholder="Additional information..."></textarea>
+
+      </div>
+
+
+      <button type="submit" class="btn btn-primary form-submit">
+        Confirm Appointment
+        <i class="fa-solid fa-check"></i>
+      </button>
+
+    </form>
+
+
+    <div class="appointment-success" id="appointmentSuccess">
+
+      <div class="success-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h3>Appointment Request Submitted!</h3>
+
+      <p>
+        Thank you for choosing CAREINDIA.
+        Our team will contact you shortly to confirm your appointment.
+      </p>
+
+      <button class="btn btn-primary" onclick="closeAppointment()">
+        Done
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= SCROLL TOP ================= -->
+
+<button class="scroll-top" id="scrollTop">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
